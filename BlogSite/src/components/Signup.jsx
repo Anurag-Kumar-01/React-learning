@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import authService from '../appwrite/auth'
 import { Link,useNavigate } from 'react-router-dom'
 import {login} from '../store/authSlice'
-import {Button,input,Logo } from './index'
+import {Button,Input,Logo } from './index'
 import { useForm } from 'react-hook-form'
 import { useDispatch } from 'react-redux'
 
@@ -49,14 +49,14 @@ export const Signup = () => {
 
                 <form onSubmit={handleSubmit(create)}>
                     <div className='space-y-5'>
-                        <input
+                        <Input
                         label="Full Name: "
                         placeholder="Enter your full name"
                         {...register("name", {
                             required: true,
                         })}
                         />
-                        <input
+                        <Input
                         label="Email: "
                         placeholder="Enter your email"
                         type="email"
@@ -68,7 +68,7 @@ export const Signup = () => {
                             }
                         })}
                         />
-                        <input
+                        <Input
                         label="Password: "
                         type="password"
                         placeholder="Enter your password"

@@ -2,7 +2,7 @@ import React  from 'react'
 import { useState } from 'react'
 import { Link,useNavigate } from 'react-router-dom'
 import {login as authlogin} from '../store/authSlice'
-import { Button , Logo,input } from './index'
+import { Button , Logo,Input } from './index'
 import { useDispatch } from 'react-redux'
 import authService from "../appwrite/auth"
 import {useForm} from "react-hook-form"
@@ -51,7 +51,7 @@ export const Login = () => {
         {error && <p className="text-red-600 mt-8 text-center">{error}</p>}
         <form onSubmit={handleSubmit(login)} className='mt-8'>
             <div className='space-y-5'>
-                <input
+                <Input
                 label="Email: "
                 placeholder="Enter your email"
                 type="email"
@@ -63,7 +63,7 @@ export const Login = () => {
                     }
                 })}
                 />
-                <input
+                <Input
                 label="Password: "
                 type="password"
                 placeholder="Enter your password"

@@ -1,6 +1,6 @@
 import React,{useId} from 'react'
 
- const Select = ({
+export const Select = ({
     options,
     label,
     className = "",
