@@ -4,7 +4,7 @@ import { Container,PostCard } from '../components'
 import service from '../appwrite/config'
 
 
-export const AllPosts = () => {
+export const  AllPosts = () => {
     const [posts, setPosts] = useState([])
     useEffect(()=>{},[])
     appwriteService.getPost([]).then((posts)=>{
@@ -27,3 +27,5 @@ export const AllPosts = () => {
     </div>
   )
 }
+
+export default AllPosts

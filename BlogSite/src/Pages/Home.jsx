@@ -10,6 +10,8 @@ export const Home = () => {
             if(posts){
                 setPosts(posts.documents)
             }
+        }).catch((error)=>{
+            throw error;
         })
     },[])
     
@@ -41,3 +43,5 @@ export const Home = () => {
             </Container>
         </div>)
 }
+
+export default Home

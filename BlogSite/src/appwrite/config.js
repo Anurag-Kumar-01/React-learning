@@ -85,7 +85,6 @@ export class Service {
              )
         } catch (error) {
             throw error;
-            return false
         }
 
     }

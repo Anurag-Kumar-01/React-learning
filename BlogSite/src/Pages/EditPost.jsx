@@ -4,7 +4,7 @@ import { Postform,Container } from '../components'
 import { useNavigate, useParams } from 'react-router-dom'
 
 
-export const EditPost = () => {
+export const  EditPost = () => {
     const [post,setPosts] = useState(null)
     const {slug} = useParams()
     const navigate = useNavigate()
@@ -29,3 +29,5 @@ export const EditPost = () => {
   </div>
   : null
 }
+
+export default EditPost
